@@ -1,0 +1,47 @@
+.slider {
+  position: relative;
+  height: 600px;
+  width: 800px;
+  margin: auto;
+  overflow: hidden;
+
+  .slide {
+    opacity: 0;
+    transition-duration: 1s ease;
+
+    &.active {
+      opacity: 1;
+      transition-duration: 1s;
+      transform: scale(1.08);
+    }
+
+    .image {
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+  .left-arrow,
+  .right-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    font-size: 3rem;
+    color: white;
+    z-index: 10;
+    cursor: pointer;
+    user-select: none;
+
+    &:hover {
+      color: lightgray;
+    }
+  }
+
+  .left-arrow {
+    left: 0.5rem;
+  }
+
+  .right-arrow {
+    right: 0.5rem;
+  }
+}

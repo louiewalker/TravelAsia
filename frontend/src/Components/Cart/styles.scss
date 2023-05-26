@@ -1,0 +1,13 @@
+// App.scss
+.custom-table {
+    background-color: transparent !important;
+  
+    th, td {
+      background-color: transparent !important;
+    }
+  
+    tr:hover {
+      background-color: rgba(0,0,0,0.05) !important;
+    }
+  }
+  
